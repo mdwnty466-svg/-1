@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>التقنيات الحديثة في التعليم</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fdf9f1;--card:#fff;--tx:#4a2f0b;--mu:#7a6246;--p:#c2487f;--v:#7a55c9;--o:#f0a43a;--b:#1e9bd8;--g:#2e9e74;--ln:#eadfc9;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17131c;--card:#231d2b;--tx:#f4ead8;--mu:#bfae95;--p:#ef7fb0;--v:#a88bf0;--o:#f5b45a;--b:#56bdf0;--g:#4fcf9f;--ln:#3a3045;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#17131c;--card:#231d2b;--tx:#f4ead8;--mu:#bfae95;--p:#ef7fb0;--v:#a88bf0;--o:#f5b45a;--b:#56bdf0;--g:#4fcf9f;--ln:#3a3045;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:Tajawal,Tahoma,sans-serif;line-height:1.8}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--ln);display:flex;gap:6px;overflow-x:auto;padding:8px 12px}
+nav a{white-space:nowrap;text-decoration:none;color:var(--mu);font-size:14px;padding:4px 12px;border-radius:99px;font-weight:700}
+nav a.on{background:var(--p);color:#fff}
+#bar{position:fixed;top:env(safe-area-inset-top,0px);right:0;height:3px;background:linear-gradient(90deg,var(--o),var(--p));width:0;z-index:40}
+header{text-align:center;padding:56px 20px 40px;position:relative;overflow:hidden}
+header h1{font-size:clamp(30px,7vw,54px);margin:8px 0;font-weight:800}
+header p{color:var(--mu);margin:2px}
+.blob{position:absolute;border-radius:50%;opacity:.25;animation:fl 8s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-22px) scale(1.08)}}
+main{max-width:980px;margin:auto;padding:0 16px 60px}
+section{padding:46px 0 10px}
+.tag{display:inline-block;background:var(--o);color:#4a2f0b;border-radius:99px;padding:2px 16px;font-weight:800;font-size:14px}
+h2{font-size:clamp(24px,5vw,34px);margin:8px 0 4px;background:linear-gradient(90deg,var(--p),var(--v));-webkit-background-clip:text;background-clip:text;color:transparent}
+h3{margin:28px 0 10px;font-size:21px;color:var(--p)}
+.lead{color:var(--mu);font-size:17px;max-width:720px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.c{background:var(--card);border:1px solid var(--ln);border-radius:18px;padding:18px;transition:.25s;position:relative}
+.c:hover{transform:translateY(-4px);box-shadow:0 10px 24px #0002}
+.c b{display:block;font-size:18px}.c span{color:var(--mu);font-size:15px}
+.ic{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-size:24px;margin-bottom:8px;color:#fff;font-weight:800}
+.rv{opacity:0;transform:translateY(26px);transition:.7s}.rv.in{opacity:1;transform:none}
+.q{border:2px dashed var(--v);border-radius:20px;padding:20px;background:var(--card)}
+.q button{display:block;width:100%;text-align:right;font:inherit;color:var(--tx);background:var(--bg);border:2px solid var(--ln);border-radius:14px;padding:12px 16px;margin:8px 0;cursor:pointer;transition:.2s}
+.q button:hover{border-color:var(--v)}
+.q button.ok{background:var(--g);color:#fff;border-color:var(--g)}
+.q button.no{background:#d9534f;color:#fff;border-color:#d9534f;animation:sh .4s}
+@keyframes sh{25%{transform:translateX(8px)}75%{transform:translateX(-8px)}}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.tabs button{font:inherit;font-weight:700;border:2px solid var(--ln);background:var(--card);color:var(--tx);padding:6px 20px;border-radius:99px;cursor:pointer}
+.tabs button.on{background:var(--v);color:#fff;border-color:var(--v)}
+.panel{display:none}.panel.on{display:block;animation:pop .45s}
+@keyframes pop{from{opacity:0;transform:scale(.96)}}
+ul.l{list-style:none;padding:0;margin:0}
+ul.l li{background:var(--card);border:1px solid var(--ln);border-radius:14px;padding:10px 16px;margin:8px 0;border-right:6px solid var(--v)}
+.big{background:linear-gradient(135deg,var(--v),var(--p));color:#fff;border-radius:22px;padding:24px;font-size:19px}
+.big small{display:block;opacity:.85;font-size:15px;margin-top:6px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{background:var(--card);border:2px solid var(--ln);border-radius:99px;padding:8px 20px;font-weight:700;cursor:pointer;font:inherit;color:var(--tx)}
+.chip.on{background:var(--o);color:#4a2f0b;border-color:var(--o);transform:scale(1.08)}
+.flow{display:flex;gap:6px;align-items:stretch;flex-wrap:wrap}
+.step{flex:1 1 140px;background:var(--card);border:2px solid var(--ln);border-radius:16px;padding:14px;text-align:center;cursor:pointer;transition:.25s}
+.step.on,.step:hover{border-color:var(--p);transform:translateY(-4px)}
+.step i{display:grid;place-items:center;width:34px;height:34px;margin:0 auto 4px;border-radius:50%;background:var(--p);color:#fff;font-style:normal;font-weight:800}
+.eq{display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;font-weight:800;font-size:18px;margin:18px 0}
+.eq div{background:var(--card);border:2px solid var(--ln);border-radius:16px;padding:10px 20px}
+.eq div:nth-child(odd){animation:pulse 2.4s infinite}
+@keyframes pulse{50%{border-color:var(--p);transform:scale(1.05)}}
+.pulse{animation:pulse 2.4s infinite}
+.def{font-size:18px;background:var(--card);border:1px solid var(--ln);border-radius:18px;padding:18px 22px}
+footer{text-align:center;color:var(--mu);padding:30px 16px;border-top:1px solid var(--ln)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<nav id="nav"></nav>
+<header>
+<div class="blob" style="width:200px;height:200px;background:var(--p);top:-60px;right:-40px"></div>
+<div class="blob" style="width:150px;height:150px;background:var(--o);bottom:-40px;left:6%;animation-delay:-3s"></div>
+<span class="tag">درس تفاعلي</span>
+<h1>التقنيات الحديثة في التعليم</h1>
+<p>إعداد: تسنيم الطيب وإيمان الأهدل</p>
+<p>بإشراف: أ.د. أماني الشعيبي</p>
+</header>
+<main id="m"></main>
+<footer>التقنيات الحديثة في التعليم · تسنيم الطيب وإيمان الأهدل</footer>
+<script>
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const cols=['var(--p)','var(--v)','var(--b)','var(--g)','var(--o)','#d9534f'];
+const cards=(a,ic)=>`<div class="grid">${a.map((x,i)=>`<div class="c rv"><div class="ic" style="background:${cols[i%6]}">${ic?ic[i]:i+1}</div><b>${x[0]}</b>${x[1]?`<span>${x[1]}</span>`:''}</div>`).join('')}</div>`;
+const tabs=(id,t)=>`<div class="tabs" data-t="${id}">${t.map((x,i)=>`<button class="${i?'':'on'}">${x[0]}</button>`).join('')}</div>${t.map((x,i)=>`<div class="panel ${i?'':'on'}" data-p="${id}">${x[1]}</div>`).join('')}`;
+const ul=a=>`<ul class="l">${a.map(x=>`<li>${x}</li>`).join('')}</ul>`;
+const tool=(n,a,c)=>`<h3 style="color:${c}">${n}</h3>`+ul(a);
+const S=[
+['intro','المقدمة',`<span class="tag">المقدمة</span><h2>لماذا نسعى لدمج التقنيات الحديثة في التعليم؟</h2>`+cards([['التدفق المعرفي','الاستجابة لزيادة المعلومات'],['استثارة الحواس','تحفيز حواس المتعلم'],['تبسيط البيانات','تسهيل فهم البيانات الضخمة'],['تجاوز التلقين','تغيير بيئات التعلم التقليدية'],['رفع الجودة','تحسين العملية التعليمية ونواتجها'],['التفاعل التشاركي','تحويل البيئات إلى تشاركية']],['🌊','👁️','📊','🚀','⭐','🤝'])],
+['pres','العروض التفاعلية',`<span class="tag">القسم الأول</span><h2>العروض التفاعلية</h2><h3>العروض التقديمية: من التلقين إلى التفاعل</h3><div class="grid"><div class="big rv">📽️ التقنية الأكثر شيوعًا<small>العروض التقديمية هي التقنية الأولى في الفصول الافتراضية والتقليدية.</small></div><div class="big rv" style="background:linear-gradient(135deg,var(--o),var(--p))">🔑 مفتاح الجودة<small>إضافة ميزة «التفاعل» يحولها من أسلوب إلقاء ممل إلى بيئة تفاعلية.</small></div></div>
+<h3>كيف تحقق العروض التفاعلية كفاءة التعليم؟</h3>`+cards([['استثارة الحواس','دمج الصوت، الصورة، الفيديو، والرسومات.'],['التقييم المستمر','تفعيل التقييم التكويني أثناء الدرس عبر الأسئلة الفورية.'],['الجانب الوجْداني','إضفاء المتعة التعليمية وتعزيز الشعور بالرضا.'],['المخرجات والأثر','تحسين نواتج التعلم وزيادة التحصيل العلمي.']],['🎬','✅','😊','🌱'])+`
+<h3>اختبر فهمك: إذًا العروض التفاعلية هي:</h3><div class="q" id="q1"><button data-a="0">A) عروض فيديو مسجلة مسبقاً تشتغل تلقائياً دون أي تدخل أو مشاركة من المعلم أو الطلاب.</button><button data-a="1">B) أسلوب عرض يعتمد على المشاركة الفعالة والتبادلية بين المقدم والجمهور لتحقيق أهداف تعليمية.</button><button data-a="0">C) برامج مخصصة لتصميم ألعاب الفيديو الترفيهية للأطفال ولا علاقة لها بالدروس أو البوربوينت.</button><div id="fb" style="font-weight:700"></div></div>
+<h3>أدوات صناعة العروض التفاعلية: ClassPoint و Nearpod</h3>`+tabs('t1',[['ClassPoint',tool('ClassPoint',['تكامل أصلي ومباشر مع PowerPoint.','سهولة انضمام الجمهور من أي متصفح.','سبورات بيضاء مدمجة للكتابة الحرة.','توليد أسئلة فورية بالذكاء الاصطناعي.'],'var(--v)')],['Nearpod',tool('Nearpod',['تضمين الواقع الافتراضي والنماذج ثلاثية الأبعاد.','فيديوهات تفاعلية تتوقف عند نقاط محددة لطرح الأسئلة.','أنشطة فورية متنوعة مثل DrawIt.','توليد الدروس بالذكاء الاصطناعي.'],'var(--p)')]])],
+['game','الألعاب والتلعيب',`<span class="tag">القسم الثاني</span><h2>الألعاب التعليمية والتلعيب</h2><h3>التلعيب: الانتقال إلى التشويق</h3><div class="grid"><div class="big rv">🎮 التلعيب هو<small>دمج عناصر وأسلوب الألعاب في بيئات تعليمية غير ترفيهية.</small></div><div class="big rv" style="background:linear-gradient(135deg,var(--b),var(--v))">🎯 الهدف<small>تعزيز مهارات القرن الحادي والعشرين، ورفع دافعية المتعلمين.</small></div></div>
+<h3>عناصر التلعيب</h3>`+cards([['النقاط'],['المستويات'],['الشارات'],['لوحة الصدارة']],['🪙','📈','🏅','🏆'])+`<p class="lead">عناصر بسيطة ترفع الدافعية وتحوّل الحصة إلى تحدٍّ ممتع.</p>
+<h3>أدوات التلعيب: ClassPoint و Nearpod</h3>`+tabs('t2',[['ClassPoint',tool('ClassPoint',['نظام منح النجوم.','تصنيف الطلاب في مستويات.','وعرض لوحة المتصدرين فورياً.'],'var(--v)')],['Nearpod',tool('Nearpod',['لعبة السباق التنافسي (Time to Climb)؛ حيث يختار الطالب شخصية كرتونية لتسلق الجبل بالإجابات الصحيحة.'],'var(--p)')]])+`
+<h3>الألعاب التعليمية</h3><div class="def">الألعاب التعليمية هي ألعاب قائمة بذاتها لتحقيق أهداف تعليمية معينة. ومن الأمثلة عليها: لعبة <b>(Minecraft)</b> ولعبة <b>(SimCity)</b>.</div>`],
+['info','الإنفوجرافيك',`<span class="tag">القسم الثالث</span><h2>تصميم وإنتاج الإنفوجرافيك</h2><h3>مفهوم الإنفوجرافيك</h3><div class="eq"><div>Information<br><small>معلومات</small></div><div>+</div><div>Graphic<br><small>صور ورسوم</small></div><div>=</div><div class="pulse">تحويل</div></div><div class="def">هو شكل من أشكال التمثيل البصري يقوم بتحويل البيانات والمعلومات والمفاهيم المعقدة إلى صور ورسوم يمكن فهمها واستيعابها بطريقة سهلة الفهم والاستيعاب.</div>
+<h3>مكونات الإنفوجرافيك</h3><p class="lead">تتعدد أنواع وأشكال الإنفوجرافيك إلا أنها تشترك في المكونات الرئيسية ومن أهمها:</p>`+cards([['العنصر البصري'],['المحتوى البصري'],['المعرفة والمفاهيم']],['١','٢','٣'])+`
+<h3>أنواع الإنفوجرافيك التعليمي</h3><p class="lead">بحسب طريقة العرض تنقسم إلى 3 أنواع:</p>`+tabs('t3',[['١ الثابت','<div class="big">🖼️ الثابت<small>رأسي • أفقي</small></div>'],['٢ المتحرّك','<div class="big" style="background:linear-gradient(135deg,var(--o),var(--p))">🎞️ المتحرّك<small>فيديو • موشن جرافيك</small></div>'],['٣ التفاعلي','<div class="big" style="background:linear-gradient(135deg,var(--b),var(--g))">👆 التفاعلي<small>تفاعل مباشر</small></div>']])+`
+<p class="lead">بحسب المحتوى والهدف وهي 7 أنواع:</p><div class="chips">${['زمني','مقارنة','إحصائي','قائمة','هرمي','العمليات (إجرائي)','جغرافي'].map(x=>`<button class="chip">${x}</button>`).join('')}</div>
+<h3>معايير تصميم الإنفوجرافيك التعليمي</h3>`+cards([['سهولة الاستخدام','واجهة بسيطة وأدوات تنقل واضحة وتحكم ذاتي'],['المعايير التقنية','كفاءة التشغيل وسرعة التحميل وسلامة الروابط'],['المعايير الفنية','الألوان والخطوط وتوازن العناصر ووضوح الرسوم'],['المعايير التربوية','وضوح الأهداف ومواءمة المحتوى مع المتعلمين']],['🧭','⚙️','🎨','🎓'])+`
+<h3>التصميم التعليمي للإنفوجرافيك وفق نموذج ADDIE</h3><p class="lead">قُسِّم هذا النموذج إلى خمس مراحل محاكيًا لنماذج التصميم التعليمي.</p><div class="flow">${[['Analysis','التحليل'],['Design','التصميم'],['Development','التطوير'],['Implementation','التنفيذ'],['Evaluation','التقويم']].map((x,i)=>`<div class="step"><i>${'ADDIE'[i]}</i><b>${x[1]}</b><br><small>${x[0]}</small></div>`).join('')}</div>
+<h3>أشهر أدوات تصميم الإنفوجرافيك التعليمي</h3><div class="grid"><div class="c rv"><b>البرامج</b><span>Microsoft PowerPoint · Adobe Illustrator</span></div><div class="c rv"><b>مواقع سحابية</b><span>Piktochart · Canva</span></div></div>`],
+['media','الوسائط الرقمية',`<span class="tag">القسم الرابع</span><h2>الوسائط الرقمية التفاعلية</h2><h3>المفهوم</h3><div class="def">منظومة تكنولوجية متكاملة تدمج بين عناصر متعددة تشمل:</div><div class="chips" style="margin-top:12px">${['النصوص','الأصوات','الصور الثابتة والمتحركة','الفيديو','الرسوم ثلاثية الأبعاد'].map(x=>`<button class="chip">${x}</button>`).join('')}</div>
+<h3>أهمية الوسائط التفاعلية في التعليم</h3>`+cards([['تغذية راجعة فورية','معرفة النتيجة فوراً وتدارك الأخطاء ذاتياً'],['تحسن التحصيل','تبسيط المفاهيم وحفظها في الذاكرة طويلة المدى'],['زيادة التحفيز','عناصر تشويق مرئية وسمعية ترفع التركيز والدافعية'],['تخصيص التعلم','تراعي الفروق الفردية وتتيح التحكم بالوقت والمكان']],['⚡','📈','🔥','🧩'])+`
+<h3>معايير تصميم الوسائط الرقمية التفاعلية</h3>`+cards([['تحديد الفئة المستهدفة','معرفة عمر الطلاب ومهاراتهم التقنية السابقة لتصميم واجهة تناسب قدراتهم.'],['صياغة الأهداف التعليمية','تحديد الهدف بدقة إن كان لتعليم مفهوم جديد، أم للتدريب والممارسة، أم للتقييم.'],['البساطة وتجنب التشتت المعرفي','الحذر من حشو الشاشات بالألوان الكثيرة والمؤثرات الصوتية.'],['سهولة التنقل','توفير أزرار واضحة وقوائم مبسطة.']])]
+];
+$('#m').innerHTML=S.map(s=>`<section id="${s[0]}">${s[2]}</section>`).join('');
+$('#nav').innerHTML=S.map(s=>`<a href="#${s[0]}">${s[1]}</a>`).join('');
+$$('.tabs').forEach(t=>$$('button',t).forEach((b,i)=>b.onclick=()=>{$$('button',t).forEach(x=>x.classList.toggle('on',x===b));$$(`[data-p="${t.dataset.t}"]`).forEach((p,j)=>p.classList.toggle('on',i===j))}));
+$$('.chip').forEach(c=>c.onclick=()=>{$$('.chip',c.parentNode).forEach(x=>x.classList.toggle('on',x===c))});
+$$('.step').forEach(c=>c.onclick=()=>{$$('.step',c.parentNode).forEach(x=>x.classList.toggle('on',x===c))});
+$$('#q1 button').forEach(b=>b.onclick=()=>{const ok=b.dataset.a==='1';b.className=ok?'ok':'no';$('#fb').textContent=ok?'إجابة صحيحة! 🎉':'حاول مرة أخرى';if(ok)$$('#q1 button').forEach(x=>x.disabled=true)});
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.15});
+$$('.rv').forEach((e,i)=>{e.style.transitionDelay=(i%4)*80+'ms';io.observe(e)});
+const secs=$$('section'),links=$$('nav a');
+addEventListener('scroll',()=>{const h=document.documentElement;$('#bar').style.width=(scrollY/(h.scrollHeight-innerHeight)*100)+'%';let k=0;secs.forEach((s,i)=>{if(s.getBoundingClientRect().top<140)k=i});links.forEach((l,i)=>l.classList.toggle('on',i===k))},{passive:true});
+</script>
+</body>
+</html>
